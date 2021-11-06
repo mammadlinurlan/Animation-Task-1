@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.box{
+    width: 30px;
+    height: 65px;
+    background-color: black;
+    border-radius: 10px;
+    animation-name: customAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes customAnimation {
+
+    0%{
+        width: 30px;
+        height: 65px;
+        top: 100%;
+    }
+
+    100%{
+        width: 275px;
+        height: 55px;
+        background-color: orange;
+        top: 0%;
+    }
+}
